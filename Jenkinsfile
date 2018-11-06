@@ -3,11 +3,10 @@ pipeline{
     agent none
     stages{
         stage("Build"){
-          agent any{
+          agent any
             node{
               checkout scm;
             }
-          }
         }
         stage("parallel"){
             parallel{
