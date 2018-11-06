@@ -9,7 +9,7 @@ pipeline{
             }
         }
         stage("parallel"){
-            parallel{
+            //parallel{
                 stage("Slave-1"){
                     agent {label 'Slave-1'}
                     steps{
@@ -22,7 +22,7 @@ pipeline{
                         echo 'Hello World on Slave-2'
                     }
                 }
-            }
+            //}
         }
     }
 }
