@@ -3,8 +3,8 @@ pipeline{
     agent none
     stages{
         stage("Build"){
-          agent any
-            node{
+          agent {label 'Slave-1'}
+            steps{
               checkout scm;
             }
         }
