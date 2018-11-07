@@ -13,7 +13,7 @@ pipeline{
                 dockerfile true
             }
             steps {
-              sh 'ls'
+              echo "docker working"
             }
         }
     }
