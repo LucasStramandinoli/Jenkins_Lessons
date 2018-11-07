@@ -5,7 +5,7 @@ class Calculator{
   int num2
   def script
 
-  Calc(script){
+  Calculator(script){
     this.script = script
   }
 
