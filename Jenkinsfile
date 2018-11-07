@@ -12,6 +12,9 @@ pipeline{
             agent{
                 dockerfile true
             }
+            steps {
+              sh 'ls'
+            }
         }
     }
 }
