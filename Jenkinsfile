@@ -12,9 +12,6 @@ pipeline{
             agent{
                 dockerfile true
             }
-            steps {
-              sh 'cat /etc/lsb-release'
-            }
         }
     }
 }
