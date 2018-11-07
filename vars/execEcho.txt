@@ -1,1 +1,1 @@
-this is just a test foo
+this is just a test for echo function
