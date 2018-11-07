@@ -10,6 +10,7 @@ class Calculator{
   }
 
   void printOutCalc(){
-    script.echo "total: ${num1}+${num2}"
+    int total = num1+num2
+    script.echo "total: ${total}"
   }
 }
