@@ -11,7 +11,6 @@ def call(String command){
           }
         }
       }
-    }
   }
   else if (command == "deploy"){
     pipeline {
