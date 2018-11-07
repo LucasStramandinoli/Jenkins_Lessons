@@ -4,10 +4,10 @@ pipeline{
         dockerfile true
     }
     stages {
-      stage('test') {
-        steps {
-          echo 'etwas'
+        stage('Build') {
+            steps {
+                sh 'mvn -v'
+            }
         }
-      }
     }
 }
