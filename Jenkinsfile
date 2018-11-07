@@ -1,8 +1,9 @@
 #!groovy
 pipeline{
-    agent any
+    agent none
     stages{
         stage("Checkout"){
+          agent any;
             steps{
               checkout scm;
             }
@@ -10,6 +11,9 @@ pipeline{
         stage("Docker"){
             agent{
                 dockerfile true
+            }
+            steps {
+              sh 'cat /etc/lsb-release'
             }
         }
     }
