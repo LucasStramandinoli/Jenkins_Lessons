@@ -8,7 +8,7 @@ pipeline{
             }
         }
         stage("Docker"){
-            steps{
+            agent{
                 dockerfile true
             }
         }
